@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  WalkAbout
+
+  Created by Scott Grant on 8/4/17.
+  Copyright © 2017 Scott Grant. All rights reserved.
+*/
+"kFailAlertTitle" = "Oops!";
+"kFailInitializationAlertMessage" = "Couldn't initialize location services, you may need to turn them on in Settings!";
+"kPermissionDeniedTitle" = "Permission Denied";
+"kPermissionDeniedMessage" = "The app is not allowed to use location services. You will need to enable them in Settings.";
+"kRemovePreviousDestinationTitle" = "Change Destination";
+"kRemovePreviousDestinationMessage" = "Are you sure you want to change your destination?";
+"kIntroductionAlertTitle" = "Welcome To WalkAbout!";
+"kIntroductionAlertMessage" = "Take a walk! Tap and hold anywhere on the screen to set your destination, we'll show you the way";
+"kOKButtonText" = "OK";
+"kYesButtonText" = "Yes";
+"kCancelButtonText" = "Cancel";
