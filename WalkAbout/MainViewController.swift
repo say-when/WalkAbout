@@ -97,7 +97,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     // MARK: Notifications
     //
     
-    func applicationWillResignActive(notification:Notification) {
+    @objc func applicationWillResignActive(notification:Notification) {
         // Suspend updates during a phone call, etc...
         print("applicationWillResignActive...")
         self.cancelDispatches = true
@@ -105,7 +105,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         self.locationManager.stopUpdatingHeading()
     }
     
-    func applicationDidBecomeActive(notification:Notification) {
+    @objc func applicationDidBecomeActive(notification:Notification) {
         // Check our state, resume updates...
         print("applicationDidBecomeActive...")
         
@@ -120,7 +120,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     // MARK: Gestures
     //
     
-    func receivedLongPressGesture(_ gestureRecognizer : UIGestureRecognizer) {
+    @objc func receivedLongPressGesture(_ gestureRecognizer : UIGestureRecognizer) {
         if gestureRecognizer.state == .began {
             let touchPoint = gestureRecognizer.location(in: mapView)
             let destinationCoordinate = self.mapView.convert(touchPoint, toCoordinateFrom: mapView)
